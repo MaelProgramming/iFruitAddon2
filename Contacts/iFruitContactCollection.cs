@@ -11,7 +11,7 @@ namespace iFruitAddon2
     {
         private bool _shouldDraw = true;
 
-        private readonly int _appContactScriptHash;
+        private readonly uint _appContactScriptHash;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="iFruitContactCollection"/> class.
@@ -19,7 +19,7 @@ namespace iFruitAddon2
         public iFruitContactCollection()
         {
             Logger.Debug("Initializing new iFruitContactCollection...");
-            _appContactScriptHash = Game.GenerateHash("appcontacts");
+            _appContactScriptHash = StringHash.AtStringHash("appcontacts");
             Logger.Debug("iFruitContactCollection initialized!");
         }
 

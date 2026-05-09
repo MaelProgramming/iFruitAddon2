@@ -53,7 +53,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-    <PackageReference Include="ScriptHookVDotNet3" Version="[3.6.0,4.0)" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" Pack="true" PackagePath="." />
@@ -61,5 +60,10 @@
     <None Include="doc\phone2.png" Pack="true" PackagePath="." />
     <None Include="doc\phone3.png" Pack="true" PackagePath="." />
     <None Include="doc\folder_permission.png" Pack="true" PackagePath="." />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ScriptHookVDotNet3">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Grand Theft Auto V\ScriptHookVDotNet3.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

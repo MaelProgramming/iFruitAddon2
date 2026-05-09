@@ -143,11 +143,11 @@ namespace iFruitAddon2
             internal static void RemoveActiveNotification()
             {
                 // Spawning an empty notification
-                int notifId = GTA.UI.Notification.Show("");
+                var notifId = GTA.UI.Notification.PostTicker("message", true);
 
                 // Removing the notification and the previous one
-                GTA.UI.Notification.Hide(notifId);
-                GTA.UI.Notification.Hide(notifId - 1);
+                GTA.UI.Notification.Hide(notifId.Handle);
+                GTA.UI.Notification.Hide(notifId.Handle - 1);
             }
         }
     }
